@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash - Portfolio</title>
+    <link rel="icon" href="./assets/profile.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">Akash</div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">home</a>
+          <a href="#projects" class="nav-link">projects</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <h1 class="hero-title">Akash</h1>
+          <p class="hero-subtitle">
+            fullstack developer crafting digital experiences
+          </p>
+          <p class="hero-description">
+            self-taught coder who ships projects that matter
+          </p>
+          <p class="hero-description">
+            currently obsessed with AI & building the future
+          </p>
+
+          <div class="socials">
+            <h3>socials</h3>
+            <div class="social-links">
+              <a
+                href="https://github.com/Akash3106"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github</a
+              >
+              <a
+                href="https://www.linkedin.com/in/akash-04/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
+              <a
+                href="https://x.com/IamAkash_4"
+                target="_blank"
+                rel="noopener noreferrer"
+                >twitter</a
+              >
+              <a href="mailto:akash.sharma3106@gmail.com">email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Work Section -->
+      <section id="projects" class="recent-work">
+        <div class="container">
+          <h2>recent work</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="carousel">
+                  <div class="carousel-container">
+                    <img
+                      src="./assets/iq1.png"
+                      alt="iqprompt.in - AI Prompt Marketplace"
+                      class="carousel-slide active"
+                    />
+                    <img
+                      src="./assets/iq2.png"
+                      alt="iqprompt.in - AI Prompt Marketplace"
+                      class="carousel-slide"
+                    />
+                    <img
+                      src="./assets/iq3.png"
+                      alt="iqprompt.in - AI Prompt Marketplace"
+                      class="carousel-slide"
+                    />
+                  </div>
+                  <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                    ❮
+                  </button>
+                  <button class="carousel-btn next" onclick="changeSlide(1)">
+                    ❯
+                  </button>
+                  <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>iqprompt.in</h3>
+                <p>
+                  An AI-powered tool designed to let users interact with &
+                  visualize data using natural language queries, without needing
+                  to write any code.
+                  <br />
+                  <br />
+                  Non-technical users who want insights without coding.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Railway</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <button style="margin-top: 10px" class="project-link">
+                  <a href="https://iqprompt.in" target="_blank"
+                    >Visit Site
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/tweet.png" alt="tweet-ai" />
+              </div>
+              <div class="project-content">
+                <h3>Tweet-AI</h3>
+                <p>
+                  Tweet-AI is an AI-powered tweet generation tool designed to
+                  help you create engaging tweets effortlessly. Simply provide a
+                  blog post or any piece of text, and Tweet-AI will
+                  automatically convert it into a well-crafted tweet or an
+                  entire Twitter thread—depending on the length and content.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Twitter API</span>
+                  <span class="tech-tag">Railway</span>
+                  <span class="tech-tag">Vercel</span>
+                </div>
+                <button style="margin-top: 10px" class="project-link">
+                  <a href="https://tweet-ai-ivory.vercel.app/" target="_blank"
+                    >Visit Site
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GitHub Stats Section -->
+      <section class="github-stats">
+        <div class="container">
+          <h2>github stats</h2>
+          <div class="stats-container">
+            <div class="stat-card">
+              <h3>Repositories</h3>
+              <p class="stat-number">25+</p>
+            </div>
+            <div class="stat-card">
+              <h3>Contributions</h3>
+              <p class="stat-number">500+</p>
+            </div>
+            <div class="stat-card">
+              <h3>Languages</h3>
+              <p class="stat-number">8+</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <div class="container">
+          <h2>skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <p>React, Vue.js, HTML, CSS, JavaScript, TypeScript</p>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <p>Node.js, Python, Django, Express.js, PostgreSQL</p>
+            </div>
+            <div class="skill-category">
+              <h3>DevOps</h3>
+              <p>Docker, AWS, Vercel, GitHub Actions, CI/CD</p>
+            </div>
+            <div class="skill-category">
+              <h3>Tools</h3>
+              <p>Git, VS Code, Figma, Postman, Terminal</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience">
+        <div class="container">
+          <h2>experience</h2>
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Current Company</h3>
+                <span class="role">Software Engineer</span>
+              </div>
+              <div class="experience-period">Jan 2025 - Present</div>
+              <p>
+                Working on cutting-edge web applications and contributing to
+                open source projects.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Previous Company</h3>
+                <span class="role">Full Stack Developer</span>
+              </div>
+              <div class="experience-period">June 2024 - Dec 2024</div>
+              <p>
+                Built scalable web applications and mentored junior developers.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Freelance</h3>
+                <span class="role">Full Stack Developer</span>
+              </div>
+              <div class="experience-period">Aug 2023 - May 2024</div>
+              <p>
+                Delivered custom solutions for various clients across different
+                industries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Music Section -->
+      <section class="music">
+        <div class="container">
+          <h2>music</h2>
+          <p>
+            Here are some instrumentals that I listen to while coding, I bet
+            you'll love them.
+          </p>
+          <div class="music-grid">
+            <div class="music-item">
+              <h3>Hans Zimmer</h3>
+              <p>THE GOAT</p>
+            </div>
+            <div class="music-item">
+              <h3>Katherine C</h3>
+              <p>Plays beautiful covers on piano</p>
+            </div>
+            <div class="music-item">
+              <h3>Jacob's Piano</h3>
+              <p>Plays beautiful covers on piano</p>
+            </div>
+            <div class="music-item">
+              <h3>Nathen Mills</h3>
+              <p>Plays beautiful covers on guitar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorite Reads Section -->
+      <section class="favorite-reads">
+        <div class="container">
+          <h2>favorite reads</h2>
+          <p>
+            I like reading non-fiction books, blogs, and articles. Here are a
+            few books which I really like.
+          </p>
+          <div class="books-grid">
+            <div class="book-item">
+              <h3>Deep Work</h3>
+              <p>Cal Newport</p>
+            </div>
+            <div class="book-item">
+              <h3>Do it Today</h3>
+              <p>Darious Foroux</p>
+            </div>
+            <div class="book-item">
+              <h3>So Good They Can't Ignore You</h3>
+              <p>Cal Newport</p>
+            </div>
+            <div class="book-item">
+              <h3>Show Your Work</h3>
+              <p>Austin Kleon</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="container">
+          <h2>STATS</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>Deadlift PR</h3>
+              <p class="stat-value">396.83 lb</p>
+            </div>
+            <div class="stat-item">
+              <h3>Typing 30s</h3>
+              <p class="stat-value">105.12 wpm</p>
+            </div>
+            <div class="stat-item">
+              <h3>Typing 15s</h3>
+              <p class="stat-value">115.12 wpm</p>
+            </div>
+            <div class="stat-item">
+              <h3>Keyboard</h3>
+              <p class="stat-value">Keychron K2 Pro</p>
+            </div>
+            <div class="stat-item">
+              <h3>Mouse</h3>
+              <p class="stat-value">Logitech MX Master 3s</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 akash.com</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -5,7 +5,8 @@
     "main": "index.html",
     "scripts": {
         "dev": "npx serve .",
-        "build": "echo 'Static site - no build required'"
+        "build": "echo 'Static site - no build required'",
+        "vercel-build": "echo 'Static site deployed successfully'"
     },
     "dependencies": {
         "@vercel/analytics": "^1.1.1"

@@ -1,0 +1,23 @@
+{
+    "name": "akash-portfolio",
+    "version": "1.0.0",
+    "description": "Akash Deep Sharma's Portfolio Website",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx serve .",
+        "build": "echo 'Static site - no build required'"
+    },
+    "dependencies": {
+        "@vercel/analytics": "^1.1.1"
+    },
+    "devDependencies": {
+        "serve": "^14.2.1"
+    },
+    "keywords": [
+        "portfolio",
+        "developer",
+        "fullstack"
+    ],
+    "author": "Akash Deep Sharma",
+    "license": "MIT"
+}

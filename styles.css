@@ -157,6 +157,33 @@ body {
     background-color: rgba(59, 130, 246, 0.1);
 }
 
+/* CV Download Button */
+.cv-download {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #94a3b8;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.cv-button:hover {
+    color: #3b82f6;
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
 /* Section Styles */
 section {
     padding: 80px 0;
@@ -386,19 +413,34 @@ section h2 {
 }
 
 .project-link {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: #f8fafc;
+    border: none;
     padding: 12px 24px;
-    border: 2px solid white;
     border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .project-link:hover {
-    background-color: white;
-    color: #3b82f6;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.project-link a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-link a:hover {
+    text-decoration: none;
 }
 
 /* Project Content */
